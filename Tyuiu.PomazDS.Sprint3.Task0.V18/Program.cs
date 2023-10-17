@@ -18,12 +18,13 @@ namespace Tyuiu.PomazDS.Sprint3.Task0.V18
 
             ptrn.MainPattern(3,"Оператор цикла for", 0, 18, "Написать программу используя цикл for, которая вычисляет произведение ряда по формуле, при X=1", "x=1, k=1 to 6");
 
-            int startValue = int.Parse(Console.ReadLine());
-            int stopValue = int.Parse(Console.ReadLine());
+            int value = 1;
+            int startValue = 1;
+            int stopValue = 6;
 
             ptrn.ResultPattern();
 
-            Console.WriteLine("result = {0}", ds.GetSumSeries(startValue,stopValue));
+            Console.WriteLine("result = {0}", ds.GetMultiplySeries(value,startValue,stopValue));
 
             Console.ReadKey();
         }

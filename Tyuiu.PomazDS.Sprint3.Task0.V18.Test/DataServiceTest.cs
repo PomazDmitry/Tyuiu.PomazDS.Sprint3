@@ -12,9 +12,10 @@ namespace Tyuiu.PomazDS.Sprint3.Task0.V18.Test
         public void ValidGetSumSeries()
         {
             DataService ds = new DataService();
+            int value = 1;
             int startValue = 1;
             int stopValue = 6;
-            double result = ds.GetSumSeries(startValue, stopValue);
+            double result = ds.GetMultiplySeries(value,startValue, stopValue);
             double wait = 914700.94;
             Assert.AreEqual(wait,result);
             

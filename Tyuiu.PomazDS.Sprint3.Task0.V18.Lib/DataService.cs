@@ -10,15 +10,15 @@ namespace Tyuiu.PomazDS.Sprint3.Task0.V18.Lib
 {
     public class DataService : ISprint3Task0V18
     {
-        public double GetSumSeries(int startValue, int stopValue)
+        public double GetMultiplySeries(int value, int startValue, int stopValue)
         {
-            int x = 1;
-            double p = 1;
+            
+            double mult = 1;
             for (int k = startValue; k <= stopValue; k++)
             {
-                p *= Math.Pow(2 / (Math.Cos(x) + 0.5), k);
+                mult *= Math.Pow(2 / (Math.Cos(value) + 0.5), k);
             }
-            return Math.Round(p, 3);
+            return Math.Round(mult, 3);
         }
     }
 }
