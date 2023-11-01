@@ -14,13 +14,7 @@ namespace Tyuiu.PomazDS.Sprint3.Task7.V18.Lib
         {
             double[] array = new double[stopValue - startValue + 1];
             for (int i = startValue, count = 0; i <= stopValue; i++)
-            {
-                if (i == 0)
-                {
-                    array[count] = 0;
-                    count++;
-                    continue;
-                }
+            { 
                 array[count] = Math.Round((2 * i - 3) / (Math.Cos(i) + i) + 5, 2);
                 count++;
             }
